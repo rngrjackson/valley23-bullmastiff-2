@@ -10,20 +10,92 @@
  .layout{display:flex;flex-direction:column}.layout aside{display:contents}.layout main{display:contents}.loggrid{grid-template-columns:1fr 1fr;gap:9px}.loggrid>div:last-child{grid-column:span 2}.itemname{font-size:17px}.blocktop{align-items:flex-start}.blocktop .tag{flex:none}.calc{grid-template-columns:1fr 1fr}.backupcard{order:8}
 }
 @media(max-width:370px){.calc{grid-template-columns:1fr}.stat strong{font-size:17px}}
+
+/* Nutrition & recovery edition */
+[hidden]{display:none!important}.mode-tabs{display:flex;gap:9px;margin:0 0 18px}.mode-tabs button{flex:1;min-height:50px;font-weight:800;letter-spacing:.3px}.mode-tabs button.selected{background:#829765;color:#101513;border-color:#829765}.nutri-layout{display:grid;grid-template-columns:1fr 1fr;gap:15px}.nutri-layout .card{margin-bottom:0}.nutri-span{grid-column:1/-1}.nutri-date{display:flex;gap:8px;align-items:center}.nutri-date button{flex:none}.nutri-date input{flex:1;min-width:0}.nutri-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}.nutri-progress{margin:9px 0 16px}.nutri-progress .barbg{margin-top:7px}.nutri-progress .labelrow{display:flex;justify-content:space-between;font-size:12px;color:var(--muted)}.nutri-fields{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.nutri-fields.four{grid-template-columns:repeat(4,1fr)}.nutri-fields input{min-width:0}.nutri-inputline{display:flex;gap:9px}.nutri-inputline>*{flex:1}.nutri-entry{border-top:1px solid var(--line);padding:12px 0}.nutri-entry:first-child{border-top:0}.nutri-entry .headline{display:flex;gap:8px;justify-content:space-between;align-items:flex-start}.nutri-entry .actions{display:flex;gap:6px;flex:none}.nutri-entry .actions button{padding:6px 9px;font-size:12px;min-height:36px}.nutri-meter{display:flex;align-items:center;gap:15px}.nutri-meter .track{width:42px;height:154px;border:2px solid #8c987a;border-radius:25px;position:relative;overflow:hidden;background:#101914;flex:none}.nutri-meter .fill{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(0deg,#638d5d,#ba9959);transition:height .35s}.nutri-meter .detail{flex:1}.nutri-week{display:flex;gap:6px;flex-wrap:wrap}.nutri-week button{flex:1 1 74px;padding:10px 5px;font-size:12px}.nutri-week .daycount{display:block;color:var(--muted);font-size:11px;margin-top:3px}.nutri-verse{color:#b2c7a5;font-style:italic;font-size:12px;margin:8px 0 0}.nutri-hint{font-size:12px;color:var(--muted)}
+@media(max-width:720px){.nutri-layout{grid-template-columns:1fr}.nutri-span{grid-column:1}.nutri-stats{grid-template-columns:repeat(2,1fr)}.nutri-fields.four{grid-template-columns:repeat(2,1fr)}.mode-tabs{position:sticky;top:0;z-index:5;background:#101513;padding:8px 0;margin-top:-6px}.mode-tabs button{min-height:51px}.nutri-entry .headline{align-items:start}.nutri-date input{font-size:14px}}
+/* v0.4 gym and equipment */
+textarea{width:100%;min-height:80px;background:#0f1712;border:1px solid #48584c;color:var(--text);padding:10px;border-radius:8px;font:inherit}
+.equip-duo{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.equip-number{font-size:clamp(19px,3vw,29px);font-weight:900;margin:8px 0 11px;color:#e8f2df}.equip-duo .card{margin-bottom:14px}.equip-setup-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}.equip-checks{display:grid;gap:10px;padding:14px 0}.equip-checks label{display:flex;align-items:center;gap:12px;font-size:14px;margin:0;color:var(--text)}.equip-checks input{flex:none}.equip-item{padding:12px 0;border-top:1px solid var(--line)}.equip-item:first-child{border-top:0}.equip-item-head{display:flex;justify-content:space-between;align-items:flex-start;gap:12px}.equip-item-head>div:first-child{min-width:0;flex:1}.equip-item-head .mini{overflow-wrap:anywhere}.equip-actions{display:flex;gap:6px}.equip-actions button{min-height:34px;font-size:12px;padding:6px 10px}.equip-tabs{display:flex;gap:5px;flex-wrap:wrap;margin:12px 0}.equip-tabs button{padding:8px 9px;font-size:12px}.equip-tabs button.selected{background:#829765;color:#101513}.equip-pr-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin-bottom:12px}.equip-lift{padding:13px 0;border-top:1px solid var(--line)}.equip-lift:first-child{border-top:0}.equip-lift-head{display:flex;justify-content:space-between;gap:12px;align-items:baseline}.equip-lift .barbg{height:9px;margin:8px 0}.equip-tip{font-size:12px;color:var(--muted);padding:9px 11px;border-left:3px solid #a89060;background:#2d3027;border-radius:5px;margin:14px 0 0}.equip-strength-label{font-size:12px;color:var(--muted)}.equip-inline-label{font-size:12px;color:#d2e0c8}.equip-tag{font-size:11px;border:1px solid #52654c;padding:3px 7px;border-radius:7px;color:#ccd8c2}.equip-purchase{padding:10px;border:1px solid var(--line);border-radius:8px;margin:9px 0}
+@media(max-width:720px){.equip-duo,.equip-setup-grid{grid-template-columns:1fr}.equip-pr-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.equip-item-head{flex-wrap:wrap}.equip-actions{margin-left:auto}.mode-tabs{gap:5px}.mode-tabs button{padding:9px 4px;font-size:12px;letter-spacing:0}.equip-number{font-size:24px}}
 </style></head><body><div class="shell">
 <header><div><div class="brand">VALLEY<span>23</span></div><div class="sub">Bullmastiff • Home gym edition</div></div><div class="verse">“Be watchful, stand firm in the faith, act like men, be strong. Let all that you do be done in love.”<br>1 Corinthians 16:13–14</div></header>
+<div class="mode-tabs" aria-label="Tracker sections"><button type="button" id="trainingTab" class="selected" aria-pressed="true">🏋 Training</button><button type="button" id="nutritionTab" aria-pressed="false">🍎 Nutrition</button><button type="button" id="equipmentTab" aria-pressed="false">🛠 Gym & Gear</button></div>
+<div id="trainingPanel">
 <div class="row" style="justify-content:space-between;align-items:flex-end;margin-bottom:18px"><div><div class="sub">Training control center</div><h1>Build the structure first.</h1><div class="muted">20 weeks • Mon / Tue / Thu / Sat • Your gym, your progression</div></div><button id="export">Backup / Share</button></div>
 <div class="layout"><aside>
 <div class="card"><h2>Current week</h2><div class="weeknav"><button id="prev" aria-label="Previous week">◀</button><select id="week"></select><button id="next" aria-label="Next week">▶</button></div><p id="phase" class="mini"></p><div class="barbg"><div id="progress" class="bar"></div></div><p class="mini" id="wave"></p></div>
 <div class="card"><h2>Reference 1RMs</h2><p class="mini">Enter your current training reference max for each lift (lb). These are <em>not</em> the 3,000 MAN aspirational goals.</p><div id="maxfields"></div><button class="primary" id="savemax" style="width:100%;margin-top:12px">Save lift maxes</button></div>
-<div class="card backupcard"><h2>Protect your training records</h2><p class="mini">Tap <b>Backup / Share</b> to send a dated backup file to Google Drive using Android's Share menu (or download it and upload to Drive manually). This is a manual cloud backup, not continuous sync.</p><div class="row" style="margin-bottom:10px"><button id="backup" class="primary">Backup / Share to Drive</button><button id="restore">Restore a backup</button></div><input id="restoreFile" type="file" accept=".json,application/json" style="display:none"><p id="backupStatus" class="mini" role="status"></p><p class="mini">Restoring replaces this browser's saved sessions. Make a backup first.</p></div>
+<div class="card backupcard"><h2>Protect your training records</h2><p class="mini">Tap <b>Backup / Share</b> to send a dated backup file to Google Drive using Android's Share menu (or download it and upload to Drive manually). Includes nutrition and training. This is a manual cloud backup, not continuous sync.</p><div class="row" style="margin-bottom:10px"><button id="backup" class="primary">Backup / Share to Drive</button><button id="restore">Restore a backup</button></div><input id="restoreFile" type="file" accept=".json,application/json" style="display:none"><p id="backupStatus" class="mini" role="status"></p><p class="mini">Restoring a new-format backup replaces training and nutrition data on this device. Make a backup first.</p></div>
 <div class="card"><h2>Four-lift total</h2><div class="statgrid"><div class="stat" style="grid-column:span 3"><strong id="total">0 lb</strong><small>Reference total</small></div></div><p class="mini">The 3,000 lb goal is a separate long-term project. This tracker runs Bullmastiff using realistic current lift numbers.</p></div>
 </aside><main>
 <div class="card"><h2>Training day</h2><div class="nav" id="days"></div><p id="daynote" class="mini" style="margin-bottom:0"></p></div>
 <div class="card"><div class="row" style="justify-content:space-between;align-items:center"><h2 id="workoutTitle" style="margin:0">Workout</h2><span id="daytag" class="tag"></span></div><div id="workout"></div><button class="primary" id="saveworkout" style="width:100%">Save today's workout</button><p class="mini" id="saveMessage" role="status"></p></div>
 <div class="card"><h2>AMRAP calculator</h2><p class="mini">The final main-lift working set is the AMRAP. Only extra reps beyond the prescribed minimum count toward the next week's within-wave increase.</p><div class="calc"><div><label for="calcLift">Main lift</label><select id="calcLift"></select></div><div><label for="achieved">AMRAP reps completed</label><input id="achieved" type="number" min="0" max="99" value="6"></div><div><label for="currentLoad">This week's working load (lb)</label><input id="currentLoad" type="number" min="0" step="0.5"></div><div><label>Next week's calculated load</label><output id="calcOutput">—</output></div></div><div id="calcNote" class="note" style="margin-top:10px"></div></div>
 <div class="card"><h2>Important boundaries</h2><span class="pill">Main/variation progressions: original Bullmastiff</span><span class="pill">Day placement: customized</span><span class="pill">Accessory selection: customized</span><span class="pill">Landmine: auxiliary only</span><p class="mini">Weeks 19–20 are deload/testing placeholders: the excerpted original PDF does not specify exact sessions. This app does not invent them. Variation exercises in peaking are provisional pending assessment of sticking points. No landmine or bodybuilding accessories in weeks 16–18.</p><div class="note">Use appropriately positioned safeties and conservative loads, especially on AMRAP sets. Stop if technique becomes unsafe. Sessions are stored on this device. Use Backup to Google Drive after workouts; cloud syncing is not automatic in this version.</div></div>
-</main></div><div class="footer">VALLEY23 • Bullmastiff home-gym adaptation • Version 0.2 • Phone-first • Manual cloud backup • Offline after installation from HTTPS.</div></div>
+</main></div>
+</div><!-- /trainingPanel -->
+<section id="nutritionPanel" hidden aria-label="Nutrition tracker">
+ <div class="row" style="align-items:flex-end;margin-bottom:16px"><div><div class="sub">Nutrition • Stewardship • Recovery</div><h1>Fuel the work.</h1><div class="muted">Meals, macros, water and body weight — stored privately on this phone</div></div><button id="nutritionBackup">Backup / Share</button></div>
+ <div class="card"><div class="row" style="align-items:center;justify-content:space-between"><h2 style="margin:0">Nutrition date</h2><div class="nutri-date"><button id="nutriPrev" aria-label="Previous day">◀</button><input id="nutriDate" type="date" aria-label="Nutrition date"><button id="nutriNext" aria-label="Next day">▶</button></div></div><p class="nutri-hint">Choose any date. Daily totals are based only on the food you actually log.</p></div>
+ <div class="card"><h2>Today's nutrition</h2><div id="nutriStats" class="nutri-stats"></div><div id="nutriProgress"></div><p class="nutri-hint">Food numbers are entered manually for the serving you log. They are not calculated from a food database.</p></div>
+ <div class="nutri-layout">
+ <div class="card"><h2>Add food or a meal</h2>
+  <div class="nutri-fields"><div><label for="nutriMeal">Meal</label><select id="nutriMeal"><option>Breakfast</option><option>Lunch</option><option>Dinner</option><option>Snack</option></select></div><div><label for="nutriFavorite">Load saved food</label><select id="nutriFavorite"><option value="">Choose a saved food (optional)</option></select></div></div>
+  <label for="nutriFood" style="margin-top:12px">Food / meal name</label><input id="nutriFood" placeholder="e.g., Chicken and rice" maxlength="120">
+  <label for="nutriAmount" style="margin-top:12px">Amount / serving</label><input id="nutriAmount" placeholder="e.g., 1 bowl, 8 oz, 2 eggs" maxlength="100">
+  <div class="nutri-fields four" style="margin-top:12px"><div><label for="nutriCalories">Calories</label><input id="nutriCalories" type="number" min="0" step="1" inputmode="decimal"></div><div><label for="nutriProtein">Protein (g)</label><input id="nutriProtein" type="number" min="0" step="0.1" inputmode="decimal"></div><div><label for="nutriCarbs">Carbs (g)</label><input id="nutriCarbs" type="number" min="0" step="0.1" inputmode="decimal"></div><div><label for="nutriFat">Fat (g)</label><input id="nutriFat" type="number" min="0" step="0.1" inputmode="decimal"></div></div>
+  <label for="nutriNote" style="margin-top:12px">Notes (optional)</label><input id="nutriNote" placeholder="Recipe, timing, etc." maxlength="250">
+  <label style="margin-top:12px"><input id="nutriMakeFavorite" type="checkbox" class="check"> Save this food for quick entry</label>
+  <div class="row" style="margin-top:14px"><button class="primary" id="nutriSaveFood">Save food entry</button><button id="nutriCancelEdit" hidden>Cancel edit</button></div><p id="nutriFoodStatus" class="mini" role="status"></p>
+ </div>
+ <div class="card"><h2>Food log</h2><div id="nutriEntries"></div><p id="nutriEmpty" class="nutri-hint">No food entered for this date yet.</p></div>
+ <div class="card"><h2>Hydration</h2><div class="stat"><strong id="nutriWaterTotal">0 oz</strong><small id="nutriWaterGoal">Water logged on selected date</small></div><div class="row" style="margin:12px 0"><button id="nutriWater8">+ 8 oz</button><button id="nutriWater16">+ 16 oz</button></div><div class="nutri-inputline"><input id="nutriWaterAmount" type="number" min="1" step="1" inputmode="decimal" placeholder="Custom ounces" aria-label="Custom water amount in ounces"><button class="primary" id="nutriWaterAdd">Add</button></div><div id="nutriWaterEntries" class="mini" style="margin-top:12px"></div></div>
+ <div class="card"><h2>Body weight</h2><div class="nutri-inputline"><input id="nutriBodyWeight" type="number" min="1" step="0.1" inputmode="decimal" placeholder="Weight (lb)" aria-label="Body weight in pounds"><button class="primary" id="nutriSaveWeight">Save weigh-in</button></div><div class="row" style="margin-top:9px"><button id="nutriDeleteWeight" class="warn">Delete this day's weigh-in</button></div><div id="nutriWeightMeter" class="nutri-meter" style="margin-top:14px"></div><p class="nutri-hint">The weight gauge is optional. Set a starting weight and goal below; it works for gaining or losing weight.</p></div>
+ <div class="card nutri-span"><h2>Your daily targets</h2><p class="nutri-hint">Set your own targets; the app does not prescribe calorie or weight goals.</p><div class="nutri-fields four" id="nutriTargets">
+ <div><label for="targetCalories">Calories (kcal)</label><input id="targetCalories" type="number" min="0" step="1"></div><div><label for="targetProtein">Protein (g)</label><input id="targetProtein" type="number" min="0" step="1"></div><div><label for="targetCarbs">Carbs (g)</label><input id="targetCarbs" type="number" min="0" step="1"></div><div><label for="targetFat">Fat (g)</label><input id="targetFat" type="number" min="0" step="1"></div>
+ <div><label for="targetWater">Water (oz)</label><input id="targetWater" type="number" min="0" step="1"></div><div><label for="targetStartWeight">Starting weight (lb)</label><input id="targetStartWeight" type="number" min="1" step="0.1"></div><div><label for="targetGoalWeight">Goal weight (lb)</label><input id="targetGoalWeight" type="number" min="1" step="0.1"></div></div><button id="nutriSaveTargets" class="primary" style="margin-top:14px">Save daily targets</button><p class="mini" id="nutriTargetsStatus" role="status"></p></div>
+ <div class="card nutri-span"><h2>Recent days</h2><p class="nutri-hint">Tap a date to review or edit its food and water records.</p><div id="nutriWeek" class="nutri-week"></div></div>
+ <div class="card nutri-span"><h2>Backup & protection</h2><p class="mini">The Backup / Share button now exports <strong>both Bullmastiff training and nutrition</strong> in one JSON file. Save it to Google Drive manually. No account connection or automatic cloud sync is included.</p><button id="nutriBackupBottom" class="primary">Backup training + nutrition</button><p class="nutri-verse">“So, whether you eat or drink, or whatever you do, do all to the glory of God.” — 1 Corinthians 10:31 (ESV)</p></div>
+ </div>
+</section><section id="equipmentPanel" hidden aria-label="Gym equipment and strength benchmarks">
+  <div class="row" style="align-items:flex-end;margin-bottom:16px"><div><div class="sub">VALLEY23 • THE 3,000 MAN LOADOUT</div><h1>The gym is ready. Now build the man.</h1><div class="muted">Owned gear • equipment bottlenecks • future purchases • achieved strength</div></div><button id="equipmentBackup">Backup / Share</button></div>
+  <div class="equip-duo">
+   <div class="card"><div class="sub">Gym readiness • verified equipment capability</div><div class="equip-number" id="eqReadyNumber">Pending verification</div><div class="barbg"><div class="bar" id="eqReadyBar" style="width:0%"></div></div><div class="mini" id="eqReadyNote"></div></div>
+   <div class="card"><div class="sub">Man readiness • personally achieved lifts</div><div class="equip-number" id="eqManNumber">0 / 3,000 lb</div><div class="barbg"><div class="bar" id="eqManBar" style="width:0%"></div></div><div class="mini" id="eqManNote">Enter your actual best successful lifts below. Reference training maxes are not PRs.</div></div>
+  </div>
+  <div class="card"><h2>Four lift benchmarks</h2><div id="eqLiftRows"></div><p class="equip-tip">Equipment gauge counts only documented component ratings, plate loading and fit, and confirmed setup requirements. <strong>It is not a safety certification.</strong> Unknown ratings never count as verified.</p></div>
+  <div class="card"><h2>Personal bests</h2><p class="mini">Enter your highest successfully completed lifts. Leave unknowns blank. Your Bullmastiff reference 1RMs remain separate.</p><div class="equip-pr-grid" id="eqPrFields"></div><button class="primary" id="eqSavePrs">Save personal bests</button><p class="mini" id="eqPrStatus" role="status"></p></div>
+  <div class="card"><h2>Today's loadout & next purchase</h2><p class="mini">A forecast from the currently selected Bullmastiff week/day. Set your training reference maxes under Training to enable it.</p><div id="eqForecast"></div><div id="eqShoppingHint" class="note" style="margin-top:12px"></div></div>
+  <div class="card"><h2>Equipment setup & safety verification</h2><p class="mini">These settings determine what can enter the <strong>verified equipment</strong> gauge. Use manufacturer-specific limits and verify conditions physically.</p>
+   <div class="equip-setup-grid"><div><label>Primary Olympic bar</label><select id="eqSelectedBar"></select></div><div><label>Power rack</label><select id="eqSelectedRack"></select></div><div><label>Flat/incline bench</label><select id="eqSelectedBench"></select></div><div><label>Your body weight (lb)</label><input id="eqBodyWeight" type="number" min="1" step="0.5" placeholder="e.g., 278"></div></div>
+   <div class="equip-checks"><label><input id="eqCollars" type="checkbox" class="check"> I have appropriate collars and verified their use</label><label><input id="eqSafety" type="checkbox" class="check"> Rack safeties are present, positioned, and appropriate for the lifts</label><label><input id="eqUnrack" type="checkbox" class="check"> OHP bar start / rerack setup is appropriate</label><label><input id="eqFloor" type="checkbox" class="check"> Deadlift surface/platform is suitable for this loading</label></div>
+   <button id="eqSaveSetup" class="primary">Save gym setup</button><p id="eqSetupStatus" class="mini" role="status"></p>
+  </div>
+  <div class="card"><div class="blocktop"><h2>My equipment inventory</h2><span class="pill">Owned • Ordered • Wish list • Retired</span></div><p class="mini">Preloaded from your previously supplied gear list. All unspecified ratings are blank. Tap Edit to add missing specs, or add your own equipment directly on the phone.</p><div class="equip-tabs" id="eqStatusTabs"></div><div id="eqInventoryList"></div></div>
+  <div class="card"><h2 id="eqEditTitle">Add equipment</h2>
+    <div class="equip-setup-grid">
+      <div><label>Name / model</label><input id="eqName" placeholder="e.g., 45-lb calibrated plate"></div>
+      <div><label>Category</label><select id="eqCategory"><option value="plate">Weight plate</option><option value="bar">Barbell</option><option value="rack">Rack + safeties</option><option value="bench">Bench</option><option value="dumbbell">Dumbbells</option><option value="attachment">Attachment / accessory</option><option value="other">Other equipment</option></select></div>
+      <div><label>Status</label><select id="eqStatus"><option value="owned">Owned</option><option value="ordered">Ordered</option><option value="wish">Wish list</option><option value="retired">Retired</option></select></div>
+      <div><label>Quantity (individual pieces)</label><input id="eqQuantity" type="number" min="1" step="1" value="1"></div>
+      <div><label>Unit weight (lb)</label><input id="eqWeight" type="number" min="0" step="0.25" placeholder="Used for bars and plates"></div>
+      <div><label>Manufacturer-rated load (lb)</label><input id="eqRating" type="number" min="0" step="1" placeholder="Leave blank if unknown"></div>
+      <div><label>Rack safety rating (lb)</label><input id="eqSafetyRating" type="number" min="0" step="1" placeholder="Rack only; independently verified"></div>
+      <div><label>Bench rating definition</label><select id="eqBenchScope"><option value="combined">Total load including lifter</option><option value="external">External/bar weight only</option></select></div>
+      <div><label>Bar loadable sleeve (inches / side)</label><input id="eqSleeve" type="number" min="0" step="0.01" placeholder="Barbell only"></div>
+      <div><label>Collar space (inches / side)</label><input id="eqCollarSpace" type="number" min="0" step="0.01" placeholder="Measured or per manufacturer"></div>
+      <div><label>Plate thickness (inches / plate)</label><input id="eqThickness" type="number" min="0" step="0.01" placeholder="Required for sleeve-fit math"></div>
+      <div><label>Wish-list price ($, optional)</label><input id="eqPrice" type="number" min="0" step="0.01" placeholder="Your estimated price"></div>
+    </div>
+    <div style="margin-top:10px"><label>Notes / manufacturer source / shopping details</label><textarea id="eqNotes" rows="2" placeholder="Model, URL or important details"></textarea></div>
+    <div class="row" style="margin-top:12px"><button class="primary" id="eqSaveItem">Add to inventory</button><button id="eqCancelItem" type="button" hidden>Cancel edit</button></div><p class="mini" id="eqItemStatus" role="status"></p>
+   <p class="equip-tip">For plates, quantities mean <b>individual plates</b>, not pairs. For a bar, enter its own weight, manufacturer-rated load, available sleeve length, and reserved collar space. For benches, check how the manufacturer defines the rating. Do not treat assumptions as verified ratings.</p>
+  </div>
+  <div class="card"><h2>Acquisition plan</h2><div id="eqWishList"></div><p class="mini">Wish-list items do not raise your Gym Readiness gauge until you actually own and verify them. Listed costs are estimates you enter, not live prices.</p></div>
+  <div class="card"><button class="primary" id="eqBottomBackup">Back up training + nutrition + gym</button><p class="mini">Data stays on this device until you manually export and save the JSON backup to Drive. Never commit personal logs to your public GitHub repository.</p><div class="nutri-verse">“The plans of the diligent lead surely to abundance.” — Proverbs 21:5 (ESV)</div></div>
+</section>
+<div class="footer">VALLEY23 • Bullmastiff home-gym adaptation • Version 0.4 • Training + nutrition + gym • Phone-first • Manual cloud backup • Offline after installation from HTTPS.</div></div>
 <script>
 const days=['Monday','Tuesday','Thursday','Saturday'];const primary=['Squat','Bench Press','Deadlift','Overhead Press'];const base=[
 [['Barbell back squat','main','Squat'],['Romanian deadlift','dev','Deadlift'],['Supported landmine row','acc','Back'],['Split squat','acc','Legs'],['Hanging knee raises','acc','Abdominals']],
@@ -43,12 +115,12 @@ function logKey(){return `${data.week}-${data.day}`};const escapeHTML=s=>String(
 function render(){let w=data.week,i=waveInfo(w);$('week').value=w;$('phase').textContent=i.phase;$('wave').textContent=w<=18?`Wave ${i.wave} of 3 • week ${(i.pos+1)} of 3`:'Exact protocols not provided in source PDF';$('progress').style.width=`${w/20*100}%`;document.querySelectorAll('#days button').forEach((b,j)=>b.classList.toggle('active',j===data.day));$('workoutTitle').textContent=`${days[data.day]} — ${primary[data.day]}`;$('daytag').textContent=`Week ${w}`;$('daynote').textContent='Wednesday, Friday and Sunday are nonlifting days in your personalized schedule.';const exercises=w<=9?base[data.day]:peak[data.day];let html='';if(w>=19){html=`<p class="note">${w===19?'Deload week: Bromley does not specify exact exercises, sets or percentages in the provided PDF.':'Testing week: use an appropriate, planned and safe testing protocol. The provided PDF does not specify exact attempts.'}</p>`}else{let logged=data.logs[logKey()]||{};exercises.filter(e=>w<16||e[1]!=='acc').forEach((ex,n)=>{const [name,kind]=ex;let v=logged[n]||{};let label=kind==='main'?'PRIMARY':kind==='dev'?'DEVELOPMENTAL':kind==='target'?'TARGETED':'ACCESSORY';html+=`<div class="block"><div class="blocktop"><div class="itemname">${n+1}. ${escapeHTML(name)}</div><span class="tag">${label}</span></div><p class="prescription">${escapeHTML(prescription(ex,i))}</p><div class="loggrid"><div><label>Weight (lb)</label><input data-ex="${n}" data-key="weight" type="number" min="0" step="0.5" value="${escapeHTML(v.weight??'')}" placeholder="Load"></div><div><label>Completed sets</label><input data-ex="${n}" data-key="sets" type="number" min="0" value="${escapeHTML(v.sets??'')}" placeholder="Sets"></div><div><label>${kind==='main'?'Final AMRAP reps':'Completed reps / set'}</label><input data-ex="${n}" data-key="reps" type="number" min="0" value="${escapeHTML(v.reps??'')}" placeholder="Reps"></div></div></div>`})} $('workout').innerHTML=html;let total=Object.values(data.maxes).reduce((a,b)=>a+(Number(b)||0),0);$('total').textContent=`${total.toLocaleString()} lb`;$('calcLift').value=primary[data.day];updateCalc();}
 function updateCalc(){let i=waveInfo(data.week),lift=$('calcLift').value,max=Number(data.maxes[lift]),load=Number($('currentLoad').value),completed=Number($('achieved').value);if(data.week>=19){$('calcOutput').textContent='—';$('calcNote').textContent='The original source leaves deload/testing week loading unspecified.';return}if(!max||!load||completed<0){$('calcOutput').textContent='—';$('calcNote').textContent='Enter the lift reference max in the left panel, the current working load, and your AMRAP reps.';return}let extra=Math.max(0,completed-i.reps),add=max*.01*extra,next=load+add;$('calcOutput').textContent=`${Number(next.toFixed(2))} lb`;$('calcNote').textContent=completed<i.reps?`You missed the prescribed minimum of ${i.reps}. The PDF does not give a specific missed-rep correction; no increase is calculated here.`:i.pos===2?`This concludes the three-week wave. Do NOT carry the calculated increase into the new wave; reset using the next wave's starting percentage.`:`${extra} extra reps × 1% of ${max} lb = ${Number(add.toFixed(2))} lb added next week. Round to plates you have available.`;}
 for(let w=1;w<=20;w++){let o=document.createElement('option');o.value=w;o.textContent=`Week ${w}`;$('week').append(o)}for(let d=0;d<4;d++){let b=document.createElement('button');b.textContent=days[d].slice(0,3);b.onclick=()=>{saveCurrent();data.day=d;persist();render()};$('days').append(b)}for(let lift of primary){let id='max-'+lift.replaceAll(' ','-');$('maxfields').insertAdjacentHTML('beforeend',`<div style="margin-top:9px"><label for="${id}">${lift} (lb)</label><input id="${id}" type="number" min="0" step="0.5" value="${escapeHTML(data.maxes[lift])}" placeholder="Enter reference max"></div>`);let o=document.createElement('option');o.value=lift;o.textContent=lift;$('calcLift').append(o)}function saveCurrent(){let k=logKey(),v={};document.querySelectorAll('#workout [data-ex]').forEach(inp=>{let ex=inp.dataset.ex;v[ex]??={};v[ex][inp.dataset.key]=inp.value});if(Object.keys(v).length){data.logs[k]=v;persist()}}$('saveworkout').onclick=()=>{saveCurrent();$('saveMessage').textContent='Saved locally in this browser.'};$('week').onchange=e=>{saveCurrent();data.week=+e.target.value;persist();render()};$('prev').onclick=()=>{saveCurrent();data.week=Math.max(1,data.week-1);persist();render()};$('next').onclick=()=>{saveCurrent();data.week=Math.min(20,data.week+1);persist();render()};$('savemax').onclick=()=>{primary.forEach(l=>data.maxes[l]=$('max-'+l.replaceAll(' ','-')).value);persist();render()};$('calcLift').onchange=updateCalc;$('currentLoad').oninput=updateCalc;$('achieved').oninput=updateCalc;async function backupTraining(){
- saveCurrent();const stamp=new Date().toISOString().slice(0,10);const filename=`valley23-bullmastiff-${stamp}.json`;
- const payload={app:'VALLEY23 Bullmastiff',schemaVersion:1,exported:new Date().toISOString(),week:data.week,day:data.day,maxes:data.maxes,logs:data.logs};
+ saveCurrent();const stamp=new Date().toISOString().slice(0,10);const filename=`valley23-bullmastiff-complete-${stamp}.json`;
+ const payload={app:'VALLEY23 Bullmastiff',schemaVersion:3,exported:new Date().toISOString(),week:data.week,day:data.day,maxes:data.maxes,logs:data.logs,nutrition,equipment};
  const contents=JSON.stringify(payload,null,2);const file=new File([contents],filename,{type:'application/json'});
  const status=$('backupStatus');
  if(navigator.canShare && navigator.canShare({files:[file]})){
-   try{await navigator.share({files:[file],title:'VALLEY23 Bullmastiff training backup',text:'Save this training backup to Google Drive.'});status.textContent='Share menu completed. Confirm the file is saved in Google Drive.';return}
+   try{await navigator.share({files:[file],title:'VALLEY23 full training, nutrition and gym backup',text:'Save this complete backup to Google Drive.'});status.textContent='Share menu completed. Confirm the file is saved in Google Drive.';return}
    catch(err){if(err.name==='AbortError'){status.textContent='Share cancelled; no cloud backup confirmed.';return}}
  }
  const url=URL.createObjectURL(file);const a=document.createElement('a');a.href=url;a.download=filename;document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),2000);
@@ -60,11 +132,227 @@ $('restoreFile').onchange=async e=>{
  const file=e.target.files?.[0];if(!file)return;
  try{
  const v=JSON.parse(await file.text());if(v.app!=='VALLEY23 Bullmastiff'||!v.maxes||!v.logs||typeof v.maxes!=='object'||typeof v.logs!=='object'||Array.isArray(v.logs))throw new Error('This is not a valid VALLEY23 Bullmastiff backup.');
- if(!confirm('Restore this backup? It will REPLACE your currently saved training records on this device.'))return;
+ if(!confirm(`Restore this backup? Training records will be REPLACED.${v.nutrition?' Nutrition records will also be REPLACED.':' Existing nutrition stays.'}${v.equipment?' Equipment inventory and PRs will also be REPLACED.':' Existing gym inventory stays.'} Save a backup first.`))return;
  data={week:Math.max(1,Math.min(20,Number(v.week)||1)),day:Math.max(0,Math.min(3,Number(v.day)||0)),maxes:Object.assign({},defaultData.maxes,v.maxes),logs:v.logs};
- persist();primary.forEach(l=>$('max-'+l.replaceAll(' ','-')).value=data.maxes[l]);render();$('backupStatus').textContent='Backup restored to this browser.';
+ if(v.nutrition){nutrition=normalizeNutrition(v.nutrition);nutritionPersist();loadTargetFields();renderNutrition()}if(v.equipment){equipment=normalizeEquipment(v.equipment);equipmentPersist();renderEquipment()}persist();primary.forEach(l=>$('max-'+l.replaceAll(' ','-')).value=data.maxes[l]);render();$('backupStatus').textContent='Backup restored. Review the Training, Nutrition and Gym & Gear tabs.';
  }catch(err){$('backupStatus').textContent=err.message||'Could not restore this backup.'}finally{e.target.value=''}
 };
+
+// Nutrition v0.3: separate local key preserves the existing training key intact.
+const nutritionTemplate=()=>({targets:{calories:'3100',protein:'250',carbs:'',fat:'',water:'',startWeight:'',goalWeight:'250'},entries:[],waterEntries:[],weighIns:{},favorites:[]});
+function normalizeNutrition(input){const base=nutritionTemplate();if(!input||typeof input!=='object'||Array.isArray(input))return base;return {...base,targets:{...base.targets,...(input.targets&&typeof input.targets==='object'&&!Array.isArray(input.targets)?input.targets:{})},entries:Array.isArray(input.entries)?input.entries:[],waterEntries:Array.isArray(input.waterEntries)?input.waterEntries:[],weighIns:input.weighIns&&typeof input.weighIns==='object'&&!Array.isArray(input.weighIns)?input.weighIns:{},favorites:Array.isArray(input.favorites)?input.favorites:[]}}
+let nutrition;try{nutrition=normalizeNutrition(JSON.parse(localStorage.getItem('v23nutrition')||'{}'))}catch{nutrition=nutritionTemplate()}
+function nutritionPersist(){try{localStorage.setItem('v23nutrition',JSON.stringify(nutrition));return true}catch(err){$('nutriFoodStatus').textContent='Could not save nutrition on this device. Check available browser storage.';return false}}
+function localISO(d){return [d.getFullYear(),String(d.getMonth()+1).padStart(2,'0'),String(d.getDate()).padStart(2,'0')].join('-')}
+function dateShift(s,delta){const [y,m,d]=s.split('-').map(Number);const day=new Date(y,m-1,d);day.setDate(day.getDate()+delta);return localISO(day)}
+let nutriDay=localISO(new Date()),editingFood=null;
+const nnum=v=>Number.isFinite(+v)&&+v>0?+v:0;
+const nutriF=n=>Number(n).toLocaleString(undefined,{maximumFractionDigits:1});
+const nutritotal=day=>{const items=nutrition.entries.filter(x=>x.date===day);return Object.fromEntries(['calories','protein','carbs','fat'].map(k=>[k,items.reduce((a,x)=>a+nnum(x[k]),0)]))};
+const waterFor=day=>nutrition.waterEntries.filter(x=>x.date===day).reduce((a,x)=>a+nnum(x.oz),0);
+function renderNutrition(){
+ $('nutriDate').value=nutriDay;
+ const v=nutritotal(nutriDay),t=nutrition.targets;
+ $('nutriStats').innerHTML=[['calories','Calories','kcal'],['protein','Protein','g'],['carbs','Carbs','g'],['fat','Fat','g']].map(([key,title,unit])=>`<div class="stat"><strong>${nutriF(v[key])}</strong><small>${title} (${unit})</small></div>`).join('');
+ $('nutriProgress').innerHTML=[['calories','Calories','kcal'],['protein','Protein','g'],['carbs','Carbs','g'],['fat','Fat','g']].map(([key,title,unit])=>{const goal=nnum(t[key]),pct=goal?Math.min(100,v[key]/goal*100):0;return `<div class="nutri-progress"><div class="labelrow"><span>${title}</span><span>${nutriF(v[key])} / ${goal?nutriF(goal)+' '+unit:'No target set'}</span></div><div class="barbg"><div class="bar" style="width:${pct}%"></div></div></div>`}).join('');
+ const items=nutrition.entries.filter(x=>x.date===nutriDay);
+ $('nutriEmpty').hidden=items.length>0;
+ $('nutriEntries').innerHTML=items.map(x=>`<div class="nutri-entry"><div class="headline"><div><b>${escapeHTML(x.food)}</b><div class="mini">${escapeHTML(x.meal)} • ${escapeHTML(x.amount||'Serving not specified')}</div></div><div class="actions"><button data-food-edit="${escapeHTML(x.id)}">Edit</button><button class="warn" data-food-delete="${escapeHTML(x.id)}">Delete</button></div></div><div class="mini" style="margin-top:6px">${nutriF(nnum(x.calories))} kcal • P ${nutriF(nnum(x.protein))} g • C ${nutriF(nnum(x.carbs))} g • F ${nutriF(nnum(x.fat))} g</div>${x.notes?`<div class="mini">${escapeHTML(x.notes)}</div>`:''}</div>`).join('');
+ $('nutriWaterTotal').textContent=nutriF(waterFor(nutriDay))+' oz';$('nutriWaterGoal').textContent=nnum(t.water)?'Target: '+nutriF(t.water)+' oz':'No water target set';
+ $('nutriWaterEntries').innerHTML=nutrition.waterEntries.filter(x=>x.date===nutriDay).map(x=>`<div class="row" style="justify-content:space-between;align-items:center;gap:8px;margin-top:5px"><span>${nutriF(x.oz)} oz</span><button class="warn" style="flex:none;min-height:35px" data-water-delete="${escapeHTML(x.id)}">Undo</button></div>`).join('');
+ $('nutriBodyWeight').value=nutrition.weighIns[nutriDay]??'';
+ const recordDates=Object.keys(nutrition.weighIns).filter(d=>nnum(nutrition.weighIns[d])>0).sort();const latest=recordDates.length?+nutrition.weighIns[recordDates[recordDates.length-1]]:0;const start=nnum(t.startWeight)||(recordDates.length?nnum(nutrition.weighIns[recordDates[0]]):0),goal=nnum(t.goalWeight);
+ const valid=latest&&start&&goal&&start!==goal;const pct=valid?Math.max(0,Math.min(100,(latest-start)/(goal-start)*100)):0;
+ $('nutriWeightMeter').innerHTML=`<div class="track"><div class="fill" style="height:${pct}%"></div></div><div class="detail"><div class="sub">Weight journey</div><div style="font-size:24px;font-weight:850">${latest?nutriF(latest)+' lb':'Not logged yet'}</div><div class="mini">${valid?`${nutriF(pct)}% toward ${nutriF(goal)} lb target`:'Set a start and goal weight to activate the gauge'}</div><div class="mini">${start?'Start: '+nutriF(start)+' lb':'No starting weight'}${goal?' • Goal: '+nutriF(goal)+' lb':''}</div></div>`;
+ const selectedFav=$('nutriFavorite').value;
+ $('nutriFavorite').innerHTML='<option value="">Choose a saved food (optional)</option>'+nutrition.favorites.map(x=>`<option value="${escapeHTML(x.id)}">${escapeHTML(x.food)}${x.amount?' ('+escapeHTML(x.amount)+')':''}</option>`).join('');if(nutrition.favorites.some(x=>x.id===selectedFav))$('nutriFavorite').value=selectedFav;
+ $('nutriWeek').innerHTML=Array.from({length:7},(_,n)=>dateShift(nutriDay,n-6)).map(date=>{const value=nutritotal(date),water=waterFor(date);return `<button type="button" data-review-date="${date}" ${date===nutriDay?'class="primary"':''}>${date.slice(5)}<span class="daycount">${nutriF(value.calories)} kcal</span><span class="daycount">${nutriF(water)} oz</span></button>`}).join('');
+}
+function clearFoodForm(){editingFood=null;['nutriFood','nutriAmount','nutriCalories','nutriProtein','nutriCarbs','nutriFat','nutriNote'].forEach(id=>$(id).value='');$('nutriMeal').value='Breakfast';$('nutriFavorite').value='';$('nutriMakeFavorite').checked=false;$('nutriSaveFood').textContent='Save food entry';$('nutriCancelEdit').hidden=true}
+function inputNutritionNumber(id){const value=$(id).value;if(value==='')return 0;const number=Number(value);if(!Number.isFinite(number)||number<0)throw Error('Enter non-negative values for calories and macros.');return number}
+$('nutriSaveFood').onclick=()=>{
+ const food=$('nutriFood').value.trim();if(!food){$('nutriFoodStatus').textContent='Enter a food or meal name.';return}
+ let values;try{values={calories:inputNutritionNumber('nutriCalories'),protein:inputNutritionNumber('nutriProtein'),carbs:inputNutritionNumber('nutriCarbs'),fat:inputNutritionNumber('nutriFat')}}catch(e){$('nutriFoodStatus').textContent=e.message;return}
+ if(!['nutriCalories','nutriProtein','nutriCarbs','nutriFat'].some(id=>$(id).value.trim()!=='')){$('nutriFoodStatus').textContent='Enter at least one nutrition value.';return}
+ const rec={id:editingFood||crypto.randomUUID(),date:nutriDay,food,meal:$('nutriMeal').value,amount:$('nutriAmount').value.trim(),notes:$('nutriNote').value.trim(),...values};
+ if(editingFood){const i=nutrition.entries.findIndex(x=>x.id===editingFood);if(i>=0)nutrition.entries[i]=rec;else nutrition.entries.push(rec)}else nutrition.entries.push(rec);
+ if($('nutriMakeFavorite').checked&&!nutrition.favorites.some(x=>x.food.toLowerCase()===food.toLowerCase()&&x.amount===rec.amount))nutrition.favorites.push({id:crypto.randomUUID(),food,amount:rec.amount,...values});
+ nutritionPersist();clearFoodForm();renderNutrition();$('nutriFoodStatus').textContent='Food entry saved on this device.';
+};
+$('nutriCancelEdit').onclick=()=>{clearFoodForm();$('nutriFoodStatus').textContent='Edit canceled.'};
+$('nutriEntries').onclick=e=>{const edit=e.target.closest('[data-food-edit]'),del=e.target.closest('[data-food-delete]');if(!edit&&!del)return;const id=(edit||del).dataset[edit?'foodEdit':'foodDelete'];const i=nutrition.entries.findIndex(x=>x.id===id);if(i<0)return;if(del){if(!confirm('Delete this food entry?'))return;nutrition.entries.splice(i,1);nutritionPersist();if(editingFood===id)clearFoodForm();renderNutrition();return}
+ const x=nutrition.entries[i];editingFood=id;$('nutriMeal').value=x.meal;$('nutriFood').value=x.food;$('nutriAmount').value=x.amount||'';$('nutriCalories').value=x.calories;$('nutriProtein').value=x.protein;$('nutriCarbs').value=x.carbs;$('nutriFat').value=x.fat;$('nutriNote').value=x.notes||'';$('nutriSaveFood').textContent='Update food entry';$('nutriCancelEdit').hidden=false;$('nutriFood').focus();};
+$('nutriFavorite').onchange=e=>{const x=nutrition.favorites.find(v=>v.id===e.target.value);if(!x)return;$('nutriFood').value=x.food;$('nutriAmount').value=x.amount||'';for(const [id,key] of [['nutriCalories','calories'],['nutriProtein','protein'],['nutriCarbs','carbs'],['nutriFat','fat']])$(id).value=x[key]};
+function addWater(oz){if(!Number.isFinite(oz)||oz<=0){alert('Enter an amount greater than zero.');return}nutrition.waterEntries.push({id:crypto.randomUUID(),date:nutriDay,oz});nutritionPersist();$('nutriWaterAmount').value='';renderNutrition()}
+$('nutriWater8').onclick=()=>addWater(8);$('nutriWater16').onclick=()=>addWater(16);$('nutriWaterAdd').onclick=()=>addWater(Number($('nutriWaterAmount').value));
+$('nutriWaterEntries').onclick=e=>{const b=e.target.closest('[data-water-delete]');if(!b)return;nutrition.waterEntries=nutrition.waterEntries.filter(x=>x.id!==b.dataset.waterDelete);nutritionPersist();renderNutrition()};
+$('nutriSaveWeight').onclick=()=>{const w=Number($('nutriBodyWeight').value);if(!Number.isFinite(w)||w<=0){alert('Enter a valid body weight in pounds.');return}nutrition.weighIns[nutriDay]=w;nutritionPersist();renderNutrition()};
+$('nutriDeleteWeight').onclick=()=>{if(!(nutriDay in nutrition.weighIns))return;if(!confirm('Delete this weigh-in?'))return;delete nutrition.weighIns[nutriDay];nutritionPersist();renderNutrition()};
+const targetIds={calories:'targetCalories',protein:'targetProtein',carbs:'targetCarbs',fat:'targetFat',water:'targetWater',startWeight:'targetStartWeight',goalWeight:'targetGoalWeight'};
+function loadTargetFields(){Object.entries(targetIds).forEach(([key,id])=>$(id).value=nutrition.targets[key]??'')}
+$('nutriSaveTargets').onclick=()=>{for(const [key,id] of Object.entries(targetIds)){const v=$(id).value;const n=Number(v);if(v!==''&&(!Number.isFinite(n)||n<=0)){$('nutriTargetsStatus').textContent='Use positive targets, or leave a target blank.';return}nutrition.targets[key]=v}nutritionPersist();renderNutrition();$('nutriTargetsStatus').textContent='Daily targets saved.'};
+function chooseNutritionDay(day){nutriDay=day;clearFoodForm();$('nutriFoodStatus').textContent='';renderNutrition()}
+$('nutriDate').onchange=e=>{if(/^\d{4}-\d{2}-\d{2}$/.test(e.target.value))chooseNutritionDay(e.target.value)};
+$('nutriPrev').onclick=()=>chooseNutritionDay(dateShift(nutriDay,-1));$('nutriNext').onclick=()=>chooseNutritionDay(dateShift(nutriDay,1));
+$('nutriWeek').onclick=e=>{const b=e.target.closest('[data-review-date]');if(b)chooseNutritionDay(b.dataset.reviewDate)};
+function setScreen(screen){for(const tab of ['training','nutrition','equipment']){const selected=screen===tab;$(tab+'Panel').hidden=!selected;$(tab+'Tab').classList.toggle('selected',selected);$(tab+'Tab').setAttribute('aria-pressed',selected)}if(screen==='training')render();else if(screen==='nutrition')renderNutrition();else renderEquipment();window.scrollTo(0,0)}
+$('trainingTab').onclick=()=>setScreen('training');$('nutritionTab').onclick=()=>{saveCurrent();setScreen('nutrition')};$('equipmentTab').onclick=()=>{saveCurrent();setScreen('equipment')};
+$('nutritionBackup').onclick=backupTraining;$('nutriBackupBottom').onclick=backupTraining;
+loadTargetFields();renderNutrition();
+
+// VALLEY23 v0.4 — Gym & Equipment. All ratings/fit checks require user confirmation.
+const EQ_GOALS={'Overhead Press':450,'Bench Press':600,'Squat':900,'Deadlift':1050};
+const eqSeedItems=[
+ {id:'bar-olympic',name:'Olympic barbell (confirm model)',category:'bar',status:'owned',qty:1,weight:45,notes:'2-inch sleeves. Bar capacity and sleeve length not yet confirmed.'},
+ {id:'rack-main',name:'Power rack',category:'rack',status:'owned',qty:1,notes:'Upright and pin dimensions, rack capacity and safety ratings require verification.'},
+ {id:'bench-main',name:'Adjustable flat-to-upright bench',category:'bench',status:'owned',qty:1,benchScope:'combined',notes:'Manufacturer/model and rated total load unknown.'},
+ {id:'bench-decline',name:'Separate decline bench',category:'bench',status:'owned',qty:1,benchScope:'combined',notes:'Capacity unknown. Not selected for regular flat bench.'},
+ {id:'bar-ez',name:'EZ curl bar',category:'bar',status:'owned',qty:1,notes:'Bar weight and ratings unknown; not selected for primary lifts.'},
+ {id:'plate-25',name:'25 lb Olympic plate',category:'plate',status:'owned',qty:2,weight:25},
+ {id:'plate-10',name:'10 lb Olympic plate',category:'plate',status:'owned',qty:4,weight:10},
+ {id:'plate-5',name:'5 lb Olympic plate',category:'plate',status:'owned',qty:4,weight:5},
+ {id:'plate-2.5',name:'2.5 lb Olympic plate',category:'plate',status:'owned',qty:4,weight:2.5},
+ {id:'db-hex',name:'Rubber hex dumbbells — 25 lb',category:'dumbbell',status:'owned',qty:2,weight:25},
+ {id:'db-adjust',name:'Adjustable dumbbells',category:'dumbbell',status:'owned',qty:2,notes:'Exact maximum configuration needs confirmation.'},
+ {id:'pullup',name:'Pull-up bar',category:'attachment',status:'owned',qty:1},
+ {id:'dips',name:'Dip station',category:'attachment',status:'owned',qty:1},
+ {id:'heavybag',name:'300 lb heavy bag',category:'other',status:'owned',qty:1,weight:300},
+ {id:'mace-8',name:'8 lb training mace',category:'other',status:'owned',qty:1,weight:8},
+ {id:'mace-15',name:'15 lb training mace',category:'other',status:'owned',qty:1,weight:15},
+ {id:'landmine',name:'Landmine attachment',category:'attachment',status:'wish',qty:1,notes:'Planned / under consideration. Change to Owned when purchased.'},
+ {id:'mace-30',name:'30 lb training mace',category:'other',status:'wish',qty:1,weight:30,notes:'Under consideration.'}
+];
+const eqDefault=()=>({items:eqSeedItems.map(v=>({...v})),setup:{barId:'bar-olympic',rackId:'rack-main',benchId:'bench-main',bodyweight:278,collarsConfirmed:false,safetiesConfirmed:false,unrackConfirmed:false,floorConfirmed:false},prs:{'Overhead Press':'','Bench Press':'','Squat':'','Deadlift':''}});
+function normalizeEquipment(input){const base=eqDefault();if(!input||typeof input!=='object'||Array.isArray(input))return base;return {items:Array.isArray(input.items)?input.items.filter(v=>v&&typeof v==='object'&&typeof v.name==='string'&&typeof v.id==='string'):base.items,setup:{...base.setup,...(input.setup&&typeof input.setup==='object'&&!Array.isArray(input.setup)?input.setup:{})},prs:{...base.prs,...(input.prs&&typeof input.prs==='object'&&!Array.isArray(input.prs)?input.prs:{})}}}
+let equipment;try{equipment=normalizeEquipment(JSON.parse(localStorage.getItem('v23equipment')||'{}'))}catch{equipment=eqDefault()}
+function equipmentPersist(){try{localStorage.setItem('v23equipment',JSON.stringify(equipment));return true}catch{return false}}
+const eqNum=n=>{const v=Number(n);return Number.isFinite(v)&&v>0?v:0};
+const eqFinite=n=>n!==''&&n!==undefined&&n!==null&&Number.isFinite(Number(n))?Number(n):null;
+const eqFmt=n=>Number(n).toLocaleString(undefined,{maximumFractionDigits:2});
+function ownedCategory(c){return equipment.items.filter(x=>x.status==='owned'&&x.category===c)}
+function ownedItem(id,c){const x=equipment.items.find(x=>x.id===id&&x.status==='owned');return x&&x.category===c?x:null}
+function pairedPlates(){return ownedCategory('plate').filter(x=>eqNum(x.weight)>0&&Math.floor(eqNum(x.qty)/2)>0).map(x=>({...x,pairs:Math.floor(eqNum(x.qty)/2)})).sort((a,b)=>eqNum(b.weight)-eqNum(a.weight))}
+function plateMass(){return pairedPlates().reduce((s,p)=>s+2*p.pairs*eqNum(p.weight),0)}
+// Dynamic programming: closest balanced loading <= requested max; minimal sleeve space for each reachable weight.
+function plateSolve(maxTotal,bar,fit){
+ const barWeight=eqNum(bar?.weight),limit=Math.max(0,Math.floor(((maxTotal-barWeight)/2)*4+1e-6));
+ let sleeve=null,fitIssue='';
+ if(fit){const sl=eqFinite(bar?.sleeve),cs=eqFinite(bar?.collarSpace);if(sl===null||sl<=0||cs===null||cs<0||cs>=sl)return {total:barWeight,config:[],blocked:'Bar sleeve length and reserved collar space are not verified.'};sleeve=sl-cs;}
+ const states=new Map([[0,{space:0,config:[]}]]);
+ let missingThickness=false;
+ for(const plate of pairedPlates()){
+  const thickness=eqFinite(plate.thickness);
+  if(fit&&(thickness===null||thickness<=0)){missingThickness=true;continue}
+  const units=Math.round(eqNum(plate.weight)*4),width=fit?thickness:0;
+  if(units<=0||Math.abs(units/4-eqNum(plate.weight))>.001)continue;
+  for(let i=0;i<Math.min(plate.pairs,Math.floor(limit/units));i++){
+   const old=[...states.entries()];
+   for(const [weight,info] of old){const w=weight+units,space=info.space+width;
+    if(w>limit||(fit&&space>sleeve+1e-7))continue;
+    const prev=states.get(w);
+    if(!prev||space+1e-8<prev.space)states.set(w,{space,config:[...info.config,plate]});
+   }
+  }
+ }
+ const best=[...states.keys()].reduce((a,b)=>Math.max(a,b),0),res=states.get(best);
+ return {total:barWeight+best/2,config:res.config.map(p=>p.weight),space:res.space,blocked:missingThickness?'Some plate thicknesses are missing; those plates were excluded.':''};
+}
+function eqCapacityFor(lift){
+ const goal=EQ_GOALS[lift],s=equipment.setup,bar=ownedItem(s.barId,'bar'),rack=ownedItem(s.rackId,'rack'),bench=ownedItem(s.benchId,'bench'),blockers=[];
+ if(!bar)blockers.push('Select an owned primary bar');
+ const bRating=eqNum(bar?.rating);
+ if(bar&&!eqNum(bar.weight))blockers.push('Enter the bar’s own weight');
+ if(bar&&!bRating)blockers.push('Verify manufacturer bar load rating');
+ if(bar&&bRating&&bRating<eqNum(bar.weight))blockers.push('Bar rating cannot be lower than the bar weight');
+ if(!s.collarsConfirmed)blockers.push('Confirm collars');
+ if(lift!=='Deadlift'){
+  if(!rack)blockers.push('Select an owned rack');
+  if(rack&&!eqNum(rack.rating))blockers.push('Verify rack load rating');
+ }
+ if(lift==='Bench Press'||lift==='Squat'){
+  if(!s.safetiesConfirmed)blockers.push('Confirm correctly set rack safeties');
+  if(rack&&!eqNum(rack.safetyRating))blockers.push('Verify rack safety rating');
+ }
+ if(lift==='Overhead Press'&&!s.unrackConfirmed)blockers.push('Confirm proper overhead press unrack/rerack setup');
+ if(lift==='Deadlift'&&!s.floorConfirmed)blockers.push('Confirm suitable deadlift surface');
+ if(lift==='Bench Press'){
+  if(!bench)blockers.push('Select an owned bench');
+  if(bench&&!eqNum(bench.rating))blockers.push('Verify bench load rating');
+  if(bench&&bench.benchScope!=='external'&&!eqNum(s.bodyweight))blockers.push('Enter body weight for combined bench load');
+ }
+ if(!bar)return{verified:false,capacity:0,goal,blockers,plates:null};
+ const barWeight=eqNum(bar.weight);
+ const preview=plateSolve(goal,bar,false);
+ if(!bar.sleeve||bar.collarSpace===undefined||bar.collarSpace==='')blockers.push('Enter sleeve length and collar space');
+ const maxComponents=[goal,bRating||0];
+ if(lift!=='Deadlift')maxComponents.push(eqNum(rack?.rating));
+ if(lift==='Squat'||lift==='Bench Press')maxComponents.push(eqNum(rack?.safetyRating));
+ if(lift==='Bench Press'){
+  const combined=eqNum(bench?.rating),benchCapacity=(bench?.benchScope==='external'?combined:Math.max(0,combined-eqNum(s.bodyweight)));
+  maxComponents.push(benchCapacity);
+  if(bench&&combined&&benchCapacity<=barWeight)blockers.push('Bench capacity after body-weight allowance is insufficient');
+ }
+ const componentCap=Math.min(...maxComponents);
+ const plates=plateSolve(componentCap>0?componentCap:barWeight,bar,true);
+ if(plates.blocked)blockers.push(plates.blocked);
+ if(!pairedPlates().length)blockers.push('No balanced owned plate pairs entered');
+ if(blockers.length)return{verified:false,capacity:0,goal,blockers:[...new Set(blockers)],preview};
+ return {verified:true,capacity:Math.max(0,Math.min(goal,plates.total,componentCap)),goal,blockers:[],preview,plates};
+}
+function eqReadiness(){const vals=Object.keys(EQ_GOALS).map(lift=>({lift,...eqCapacityFor(lift)}));return {vals,verifiedSum:vals.reduce((s,v)=>s+(v.verified?v.capacity:0),0),unknown:vals.filter(v=>!v.verified).length}}
+function eqPersonalTotal(){return Object.keys(EQ_GOALS).reduce((s,l)=>s+Math.min(EQ_GOALS[l],eqNum(equipment.prs[l])),0)}
+let eqFilter='owned',editingEquipmentId=null;
+const eqFields={name:'eqName',category:'eqCategory',status:'eqStatus',qty:'eqQuantity',weight:'eqWeight',rating:'eqRating',safetyRating:'eqSafetyRating',benchScope:'eqBenchScope',sleeve:'eqSleeve',collarSpace:'eqCollarSpace',thickness:'eqThickness',price:'eqPrice',notes:'eqNotes'};
+function clearEquipmentForm(){editingEquipmentId=null;Object.values(eqFields).forEach(id=>$(id).value='');$('eqCategory').value='plate';$('eqStatus').value='owned';$('eqQuantity').value='1';$('eqBenchScope').value='combined';$('eqEditTitle').textContent='Add equipment';$('eqSaveItem').textContent='Add to inventory';$('eqCancelItem').hidden=true;}
+function selectOptions(id,c){const prev=equipment.setup[id];const items=ownedCategory(c);$(id==='barId'?'eqSelectedBar':id==='rackId'?'eqSelectedRack':'eqSelectedBench').innerHTML='<option value="">Choose owned equipment</option>'+items.map(x=>`<option value="${escapeHTML(x.id)}">${escapeHTML(x.name)}</option>`).join('');const el=$(id==='barId'?'eqSelectedBar':id==='rackId'?'eqSelectedRack':'eqSelectedBench');el.value=items.some(x=>x.id===prev)?prev:'';}
+function renderEquipment(){
+ const read=eqReadiness(),total=eqPersonalTotal();
+ $('eqReadyNumber').textContent=eqFmt(read.verifiedSum)+' / 3,000 lb';$('eqReadyBar').style.width=read.verifiedSum/3000*100+'%';
+ $('eqReadyNote').textContent=read.unknown?`${read.unknown} lift(s) unverified — these count as zero until specs and setup are confirmed.`:read.verifiedSum>=3000?'THE GYM IS READY. NOW BUILD THE MAN.':'Only verified load compatibility counts. Additions update this gauge.';
+ $('eqManNumber').textContent=eqFmt(total)+' / 3,000 lb';$('eqManBar').style.width=total/3000*100+'%';
+ $('eqManNote').textContent=total>=3000?'You entered all four individual target lifts. Verify records and celebrate the milestone.':`${eqFmt(3000-total)} lb remaining across four separate target lifts. PRs are self-reported.`;
+ $('eqLiftRows').innerHTML=read.vals.map(v=>{const p=Math.min(100,v.capacity/v.goal*100),pr=eqNum(equipment.prs[v.lift]);return `<div class="equip-lift"><div class="equip-lift-head"><b>${escapeHTML(v.lift)}</b><span class="equip-tag">Goal ${eqFmt(v.goal)} lb</span></div><div class="equip-strength-label">Gym: <b>${v.verified?eqFmt(v.capacity)+' lb verified':'Unverified'}</b> · Personal best: <b>${pr?eqFmt(pr)+' lb':'Not logged'}</b></div><div class="barbg"><div class="bar" style="width:${p}%"></div></div><div class="mini">${v.verified?(v.capacity>=v.goal?'Target load supported by entered component ratings & sleeve-fit data.':`${eqFmt(v.goal-v.capacity)} lb below goal using current verified plate inventory.`):'Needed: '+escapeHTML(v.blockers.slice(0,4).join(' • '))+(v.blockers.length>4?' • and more':'')}</div></div>`}).join('');
+ for(const lift of Object.keys(EQ_GOALS)){$('eqPr-'+lift.replaceAll(' ','-')).value=equipment.prs[lift]??''}
+ selectOptions('barId','bar');selectOptions('rackId','rack');selectOptions('benchId','bench');
+ $('eqBodyWeight').value=equipment.setup.bodyweight??'';$('eqCollars').checked=!!equipment.setup.collarsConfirmed;$('eqSafety').checked=!!equipment.setup.safetiesConfirmed;$('eqUnrack').checked=!!equipment.setup.unrackConfirmed;$('eqFloor').checked=!!equipment.setup.floorConfirmed;
+ const filters=[['owned','Owned'],['ordered','Ordered'],['wish','Wish list'],['retired','Retired']];
+ $('eqStatusTabs').innerHTML=filters.map(([id,label])=>`<button class="${eqFilter===id?'selected':''}" data-eq-filter="${id}">${label} (${equipment.items.filter(x=>x.status===id).length})</button>`).join('');
+ const listed=equipment.items.filter(x=>x.status===eqFilter);
+ $('eqInventoryList').innerHTML=listed.length?listed.map(x=>`<div class="equip-item"><div class="equip-item-head"><div><b>${escapeHTML(x.name)}</b> <span class="equip-tag">${escapeHTML(x.category)}</span><div class="mini">Qty ${eqFmt(eqNum(x.qty)||1)}${eqNum(x.weight)?' × '+eqFmt(x.weight)+' lb':''}${eqNum(x.rating)?' · Load rating '+eqFmt(x.rating)+' lb':' · Rating unverified'}${x.category==='plate'&&!eqNum(x.thickness)?' · Plate thickness unknown':''}</div>${x.notes?`<div class="mini">${escapeHTML(x.notes)}</div>`:''}</div><div class="equip-actions"><button data-eq-edit="${escapeHTML(x.id)}">Edit</button><button class="warn" data-eq-delete="${escapeHTML(x.id)}">Delete</button></div></div></div>`).join(''):'<div class="mini">No equipment in this category yet.</div>';
+ const wish=equipment.items.filter(x=>x.status==='wish'||x.status==='ordered');let wishcost=wish.reduce((sum,x)=>sum+eqNum(x.price)*Math.max(1,eqNum(x.qty)),0);
+ $('eqWishList').innerHTML=wish.length?wish.map(x=>`<div class="equip-purchase"><b>${escapeHTML(x.name)}</b><div class="mini">${x.status==='ordered'?'Ordered':'Wish list'} · Qty ${eqFmt(eqNum(x.qty)||1)}${eqNum(x.price)?' · Estimated $'+eqFmt(eqNum(x.price)*Math.max(1,eqNum(x.qty))):''}</div></div>`).join('')+`<b>Entered estimated total: $${eqFmt(wishcost)}</b>`:'<div class="mini">Wish list is empty. Add equipment and select Wish list as its status.</div>';
+ renderEquipForecast(read);
+}
+function eqForecastLoad(){const w=data.week,d=data.day;if(w>18)return {msg:'Deload/testing weeks do not have prescribed loads in the original program.'};const lift=primary[d],ref=eqNum(data.maxes[lift]),wi=waveInfo(w);if(!ref)return{msg:`Enter your ${lift} training reference 1RM on the Training tab.`};if(wi.pos===0)return{lift,w,day:days[d],load:ref*wi.pct/100,explanation:`Wave starting load: ${wi.pct}% of ${eqFmt(ref)} lb. AMRAP may change later weeks.`};const prev=(data.logs[`${w-1}-${d}`]||{})[0]||{};if(prev.weight===''||prev.weight===undefined||prev.reps===''||prev.reps===undefined)return{msg:`Week ${w} needs your prior week’s logged ${lift} working weight and AMRAP reps to forecast its load.`};const prevLoad=eqNum(prev.weight),reps=Number(prev.reps);if(!prevLoad||!Number.isFinite(reps))return{msg:'Previous workout values are incomplete.'};const extra=Math.max(0,reps-wi.reps);return {lift,w,day:days[d],load:prevLoad+extra*ref*.01,explanation:`Prior load ${eqFmt(prevLoad)} lb + ${extra} extra AMRAP reps × 1% of ${eqFmt(ref)} lb. Recheck actual programmed work.`};}
+function renderEquipForecast(read){
+ const f=eqForecastLoad();if(!f.lift){$('eqForecast').innerHTML=`<div class="mini">${escapeHTML(f.msg)}</div>`;}else{
+ const bar=ownedItem(equipment.setup.barId,'bar'),v=read.vals.find(x=>x.lift===f.lift),math=bar?plateSolve(f.load,bar,false):null,per=math?.config.reduce((m,w)=>(m[w]=(m[w]||0)+1,m),{}),layers=per?Object.keys(per).sort((a,b)=>+b-+a).map(k=>`${per[k]} × ${k} lb`).join(', '):'';
+ $('eqForecast').innerHTML=`<div class="equip-lift-head"><b>Week ${f.w} · ${escapeHTML(f.day)} · ${escapeHTML(f.lift)}</b><span class="equip-tag">${eqFmt(f.load)} lb target</span></div><p class="mini">${escapeHTML(f.explanation)}</p><div class="mini">Balanced plate math: ${math?`${eqFmt(math.total)} lb maximum not exceeding target · ${escapeHTML(layers||'empty sleeves')} per side`:'Choose an owned bar.'}. This is not a verified safe loading prescription.</div><div class="mini">${v.verified?v.capacity+1e-6>=f.load?'Entered equipment capacity covers this load.':'Entered verified capacity is below the target.':'Rating, fit or setup verification is incomplete; do not assume load is supported.'}</div>${math&&math.total+1e-6<f.load?`<p class="equip-tip">Upcoming plate-loading shortfall: ${eqFmt(f.load-math.total)} lb versus this workout’s target. Consider balanced plate pairs; confirm compatibility before buying.</p>`:''}`;
+ }
+ const bar=ownedItem(equipment.setup.barId,'bar'),maxPossible=bar?eqNum(bar.weight)+plateMass():0,short=Math.max(0,1050-maxPossible),blocks=read.vals.flatMap(x=>x.blockers).filter((x,i,a)=>a.indexOf(x)===i);
+ $('eqShoppingHint').innerHTML=`<b>Next equipment decisions</b><div style="margin-top:6px">Current balanced plate pairs permit up to <b>${eqFmt(maxPossible)} lb</b> on your selected bar by weight alone (not a safety rating, sleeve-fit result, or usable workout capacity).</div>${short?`<div style="margin-top:6px">To reach 1,050 lb, your current paired plate inventory is at least <b>${eqFmt(short)} lb</b> short of the required weight, ignoring loading constraints. Buy balanced pairs only after verifying the bar and fit.</div>`:'<div style="margin-top:6px">You have enough plate mass in balanced pairs for 1,050 lb by weight alone; fit and ratings still require verification.</div>'}${blocks.length?`<div style="margin-top:6px"><b>Verify before buying:</b> ${escapeHTML(blocks.slice(0,5).join(' • '))}</div>`:''}`;
+}
+for(const lift of Object.keys(EQ_GOALS))$('eqPrFields').insertAdjacentHTML('beforeend',`<div><label for="eqPr-${lift.replaceAll(' ','-')}">${lift} (lb)</label><input type="number" step="0.5" min="0" id="eqPr-${lift.replaceAll(' ','-')}" placeholder="Successful lift"></div>`);
+$('eqSavePrs').onclick=()=>{for(const l of Object.keys(EQ_GOALS)){const v=$('eqPr-'+l.replaceAll(' ','-')).value;if(v!==''&&(!Number.isFinite(Number(v))||Number(v)<0)){$('eqPrStatus').textContent='Enter nonnegative lift values.';return}equipment.prs[l]=v;}equipmentPersist();renderEquipment();$('eqPrStatus').textContent='Personal records saved locally.'};
+$('eqSaveSetup').onclick=()=>{const bw=$('eqBodyWeight').value;if(bw!==''&&(!Number.isFinite(Number(bw))||Number(bw)<=0)){$('eqSetupStatus').textContent='Enter a positive body weight.';return}equipment.setup={barId:$('eqSelectedBar').value,rackId:$('eqSelectedRack').value,benchId:$('eqSelectedBench').value,bodyweight:bw,collarsConfirmed:$('eqCollars').checked,safetiesConfirmed:$('eqSafety').checked,unrackConfirmed:$('eqUnrack').checked,floorConfirmed:$('eqFloor').checked};equipmentPersist();renderEquipment();$('eqSetupStatus').textContent='Gym setup saved. Only verified specifications count.'};
+$('eqStatusTabs').onclick=e=>{const b=e.target.closest('[data-eq-filter]');if(b){eqFilter=b.dataset.eqFilter;renderEquipment()}};
+$('eqInventoryList').onclick=e=>{const edit=e.target.closest('[data-eq-edit]'),del=e.target.closest('[data-eq-delete]');if(!edit&&!del)return;const id=edit?edit.dataset.eqEdit:del.dataset.eqDelete;const x=equipment.items.find(x=>x.id===id);if(!x)return;if(del){if(!confirm(`Delete ${x.name} from your inventory?`))return;equipment.items=equipment.items.filter(v=>v.id!==id);if(editingEquipmentId===id)clearEquipmentForm();equipmentPersist();renderEquipment();return}editingEquipmentId=id;for(const [k,field] of Object.entries(eqFields))$(field).value=x[k]??'';$('eqEditTitle').textContent='Edit '+x.name;$('eqSaveItem').textContent='Save changes';$('eqCancelItem').hidden=false;$('eqItemStatus').textContent='';$('eqEditTitle').scrollIntoView({behavior:'smooth',block:'start'})};
+$('eqCancelItem').onclick=()=>{clearEquipmentForm();$('eqItemStatus').textContent='Edit canceled.'};
+$('eqSaveItem').onclick=()=>{
+ const name=$('eqName').value.trim(),category=$('eqCategory').value,status=$('eqStatus').value,qty=Number($('eqQuantity').value);
+ if(!name){$('eqItemStatus').textContent='Enter an equipment name.';return}
+ if(!Number.isInteger(qty)||qty<1||qty>1000){$('eqItemStatus').textContent='Enter an individual quantity from 1 to 1,000.';return}
+ const obj={id:editingEquipmentId||crypto.randomUUID(),name,category,status,qty,notes:$('eqNotes').value.trim(),benchScope:$('eqBenchScope').value};
+ for(const [k,id] of Object.entries({weight:'eqWeight',rating:'eqRating',safetyRating:'eqSafetyRating',sleeve:'eqSleeve',collarSpace:'eqCollarSpace',thickness:'eqThickness',price:'eqPrice'})){
+  const raw=$(id).value.trim();if(raw!==''){const val=Number(raw);if(!Number.isFinite(val)||val<0){$('eqItemStatus').textContent='Use nonnegative values for weight, capacity, sleeve, thickness and price.';return}obj[k]=val;}
+ }
+ if(category==='plate'&&obj.weight!==undefined&&Math.abs(obj.weight*4-Math.round(obj.weight*4))>.001){$('eqItemStatus').textContent='For precise plate calculations, use 0.25 lb weight increments.';return}
+ if(editingEquipmentId){const index=equipment.items.findIndex(v=>v.id===editingEquipmentId);if(index>=0)equipment.items[index]=obj;else equipment.items.push(obj)}else equipment.items.push(obj);
+ eqFilter=status;equipmentPersist();clearEquipmentForm();renderEquipment();$('eqItemStatus').textContent='Equipment saved on this device.';
+};
+$('equipmentBackup').onclick=backupTraining;$('eqBottomBackup').onclick=backupTraining;
+clearEquipmentForm();renderEquipment();
+
 if('serviceWorker' in navigator && location.protocol==='https:') navigator.serviceWorker.register('./service-worker.js').catch(()=>{});
 render();
 </script></body></html>
